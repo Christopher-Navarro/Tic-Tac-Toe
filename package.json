@@ -5,9 +5,15 @@
     "react-scripts": "^5.0.0"
   },
   "main": "/index.js",
-  "devDependencies": {},
+  "homepage": "https://Christopher-Navarro.github.io/Tic-Tac-Toe",
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  },
   "scripts": {
-    "start": "react-scripts start"
+    "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build"
   },
   "browserslist": {
     "production": [
